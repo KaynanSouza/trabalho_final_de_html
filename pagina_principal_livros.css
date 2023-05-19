@@ -1,0 +1,81 @@
+/*importar font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/*moldar margem*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*formato da pagina*/
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: o 35px;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    background: #57657b;
+}
+/*imagem do harry potter*/
+.harry_potter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*todo o carrossel*/
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+/*moldagen das setass*/
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateY(-50%);
+}
+/*quando estiver na primeira foto nao ira aparecer seta*/
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+/*quando estiver na ultima foto nao ira aparecer a seta*/
+.wrapper i:last-child{
+    right: -23px;
+}
+/*movimentar o carrossel com o cursor*/
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+/*tipo de movimento da rolagem*/
+.carrousel dragging{
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+.carousel dragging img{
+    pointer-events: none;
+}
+/*imagens do carrossel*/
+.carousel img{
+    height: 326px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+.carousel:first-child{
+    margin-left: 0px;
+    display: none;
+}
+
+

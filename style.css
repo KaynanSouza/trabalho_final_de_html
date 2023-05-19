@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#343f4f; 
+}
+/*imagem do harry potter*/
+.harry_potter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    padding: 350px;
+    height: 326px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fotos{
+    border-radius: 50%;
+}
